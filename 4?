@@ -1,0 +1,240 @@
+# p56-16
+
+from datetime import datetime
+
+odds = [1,  3,  5,  7,  9, 11, 13, 15, 17, 19,
+       21, 23, 25, 27, 29, 31, 33, 35, 37, 39,
+       41, 43, 45, 47, 49, 51, 53, 55, 57, 59]
+
+    right_this_minute = datetime.today().minute
+
+    if right_this_minute in odds:
+        print("This minute seems a little odd.")
+    else:
+        print("Not an odd minute.")
+
+
+# p57-17
+
+today = "Monday"
+
+if today == 'Saturday':
+    print('Party!!')
+elif today == 'Sunday':
+    print('Recover.')
+else:
+    print('Work, work, work.')
+
+
+
+
+# p64-24
+
+for i in [1,2,3]:
+    print(i)
+
+
+for ch in "Hi!":
+    print(ch)
+
+
+
+# p65-25
+
+for num in range(5):
+    print('Head First Rocks!')
+
+
+
+# p66-26
+
+from datetime import datetime
+
+odds = [1,  3,  5,  7,  9, 11, 13, 15, 17, 19,
+       21, 23, 25, 27, 29, 31, 33, 35, 37, 39,
+       41, 43, 45, 47, 49, 51, 53, 55, 57, 59]
+
+    for i in range(5):
+        right_this_minute = datetime.today().minute
+
+        if right_this_minute in odds:
+            print("This minute seems a little odd.")
+        else:
+            print("Not an odd minute.")
+
+
+# p68-28
+
+import time
+
+time.sleep(5)
+
+
+# p70-30
+
+import random
+
+dir(random)
+
+
+# p71-31
+
+help(random.randint)
+
+random.randint(1,60)
+
+
+# P75-35
+
+
+from datetime import datetime
+
+import random
+import time
+
+odds = [1,  3,  5,  7,  9, 11, 13, 15, 17, 19,
+       21, 23, 25, 27, 29, 31, 33, 35, 37, 39,
+       41, 43, 45, 47, 49, 51, 53, 55, 57, 59]
+
+for i in range(5):
+    right_this_minute = datetime.today().minute
+    if right_this_minute in odds:
+        print("This minute seems a little odd.")
+    else:
+        print("Not an odd minute.")
+    wait_time = random.randint(1, 60)
+    time.sleep(wait_time)
+
+
+# P78-38
+
+
+word = "bottles"
+for beer_num in range(99, 0, -1):
+    print(beer_num, word, "of beer on the wall.")
+    print(beer_num, word, "of beer.")
+    print("Take one down.")
+    print("Pass it around.")
+    if beer_num == 1:
+        print("No more bottles of beer on the wall.")
+    else:
+        if (beer_num - 1) == 1:
+            word = "bottle"
+        print(beer_num - 1, word, "of beer on the wall.")
+    print()
+
+# P82-42
+
+range(5)
+list(range(5))
+list(range(5, 10))
+list(range(0, 10, 2))
+list(range(10, 0, -2))
+list(range(10, 0, 2))
+list(range(99, 0, -1))
+
+
+# P83-43
+
+word = "bottles"    ###
+for beer_num in range(99, 0, -1):   ###
+    print(beer_num, word, "of beer on the wall.")  ###
+    print(beer_num, word, "of beer.")   ###
+    print("Take one down.")   ###
+    print("Pass it around.")  ###
+    if beer_num == 1:  ###
+        print("No more bottles of beer on the wall.")   ###
+    else:   ###
+        if (beer_num - 1) == 1:   ###
+            word = "bottle"   ###
+        print(beer_num - 1, word, "of beer on the wall.")   ###
+    print()   ###
+
+
+
+
+# P126-86
+
+paranoid_android = "Marvin"
+letters = list(paranoid_android)
+for char in letters:
+    print('\t', char)
+
+
+
+# P127-87
+
+paranoid_android = "Marvin, the Paranoid Android"
+letters = list(paranoid_android)
+for char in letters[:6]:
+    print('\t', char)
+print()
+for char in letters[-7:]:
+    print('\t'*2, char)
+print()
+for char in letters[12:20]:
+    print('\t'*3, char)
+
+
+
+
+
+
+
+
+Q1. guess_me 변수에 7을 할당하고 값이 7보다 작으면 문자열 'too low'를 ,
+    7보다 크면 'too high'를, 7과 같으면 'just right'를 출력하는 조건 테스트
+    (if, elif, else)를 작성하세요
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Q2. guess_me 변수에 7을 할당하고 start 변수에 1을 할당하세요. start와 guess_me를
+    비교하는 while문을 작성하세요. start가 guess_me 보다 작은 경우에는 'too low'를
+    출력하세요. start와 guess_me가 같은 경우에는 'found it!'을 출력하고 루프를 종료하세요
+    start가 guess_me보다 큰 경우에는 'oops'를 출력하고 루프를 종료하세요. 그리고 루프의 마지막에
+    start를 1씩 증가시키세요
+
+
+
+
+
+
+Q3. for 구문만 사용 (중복 사용 가능)
+
+
+             *
+            **
+           ***
+          ****
+         *****
+        ******
+       *******
+      ********
+     *********
+
+
+
+
+
+
+
+
+             *           1
+            ***          3
+           *****         5
+          *******        7
+         *********       9
+        ***********     11
+       *************    13
+      ***************   15
