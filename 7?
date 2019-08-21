@@ -1,0 +1,22 @@
+range(5)
+list(range(5))
+list(range(5,10))
+list(range(0, 10, 2))
+list(range(10, 0, -2))
+list(range(10, 0, 2))
+list(range(99, 0, -1))
+
+word = "bottles"                                                                    #"bottles"라는 값을 word다른 변수에 대입
+for beer_num in range(99, 0 -1):                                                    #"beer_num"을 변수로 99부터 0까지 하나씩 내려
+    print(beer_num, word, "of beer on the wall.")
+    print(beer_num, word, "of beer.")                                               #beer_num, word, "of beer"라는 가사가 공식이고 변수들에 따라 값이 변화
+    print("Take one down.")
+    print("Pass it around.")
+    if beer_num == 1:                                                               #만약beer_num이 1에 다다르면
+        print("No more bottles of beer on the wall.")                               #"No more bottles of beer on the wall" 프린트
+    else:                                                                           #아니면,
+        new_num = beer_num - 1                                                      #new_num은 beer_num에서 1을 뺀 값
+        if new_num == 1:                                                            #new_num이 1에 다다르면
+            word = "bottle"                                                         #word변수에 "bottles"대신 "bottle"대입
+        print(new_num, word, "of beer on the wall.")
+    print()
