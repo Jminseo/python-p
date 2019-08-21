@@ -1,0 +1,156 @@
+money = True
+if money:
+    print("택시를 타고 가라")
+else:
+    print("걸어 가라")
+
+money = 2000
+if money >= 3000:
+    print("택시를 타고 가라")
+else:
+    print("걸어 가라")
+
+money = 2000
+card = True
+if money >= 3000 or card:
+    print("택시를 타고 가라")
+else:
+    print("걸어 가라")
+
+pocket = ['paper', 'cellphone', 'money']
+if 'money' in pocket:
+    print("택시를 타고 가라")
+else:
+    print("걸어 가라")
+
+pocket = ['paper', 'cellphone', 'money']
+if 'money' in pocket:
+    pass
+else:
+    print("걸어 가라")
+
+pocket = ['paper', 'handphone']
+card = True
+if 'money' in pocket:
+    print("택시를 타고 가라")
+else:
+    if card:
+        print("택시를 타고 가라")
+    else:
+        print("걸어 가라")
+
+money = 2000
+card = True
+if money >= 3000 or card:
+    print("택시를 타고 가라")
+else:
+    print("걸어 가라")
+
+1 in [1, 2, 3]
+1 not in [1 ,2 ,3]
+
+pocket = ['paper', 'cellphone']
+card = True
+if 'money' in pocket:
+    print("택시를 타고 가라")
+elif card:
+    print("택시를 타고 가라")
+else:
+    print("걸어 가라")
+
+#age와 height 변수가 주어졌을 때 8세 이상이고 키 100이상인 경우만
+#'놀이기구 탈 수 있음'이라는 조건문을 작성하시오
+age = 7
+height = 105
+if age >= 8 and height >= 100:
+    print('놀이 기구 탈 수 있음')
+
+#서울 우유는 1리터에 2500원이고
+#매일 우유는 1.8리터에 4200원일 경우
+#용량 대비 어떤 우유가 더 싼지 계산 및 판단하여 결과를 출력하세요
+#서울 우유가 더 싸면 '서울 우유 win', 매일 우유가 더 싸면 '매일 우유 win'
+seoul = 2500
+maeil = 4200/1.8
+if seoul > maeil:
+    print("매일 우유 win")
+else:
+    print("서울 우유 win")
+
+treeHit = 0
+while treeHit < 10:
+    treeHit = treeHit +1
+    print("나무를 %d번 찍었습니다." %treeHit)
+    if treeHit == 10:
+        print("나무 넘어갑니다")
+
+coffee = 10
+money = 300
+while money:
+    print("돈을 받았으니 커피를 줍니다")
+    coffee = coffee - 1
+    print("남은 커피의 양은 %d개입니다." %coffee)
+    if coffee == 0:
+        print("커피가 다 떨어졌습니다. 판매를 중지합니다.")
+        break
+...
+
+a = 0
+while a < 10:
+    a = a + 1
+    if a % 2 == 0: continue
+    print(a)
+
+while a < 10:
+    a = a + 1
+    if a % 2 == 0: continue
+    print(a)
+
+#while문을 사용해 1부터 1000까지의 자연수 중 3의 배수의 합을 구하세요
+result = 0
+i = 1
+while i <= 1000:
+        if i % 3 == 0:       #3으로 나누어 떨어지는 수는 3의 배수
+            result += i
+        i += 1
+print(result)
+
+i = 0
+while True:
+    i += 1
+    if i > 5: break
+    print('*' * i)
+
+test_list = ['one', 'two', 'three']
+for i in test_list:
+    print(i)
+
+a = [(1,2), (3,4), (5,6)]
+for (first, last) in a:
+    print(first+last)
+
+marks = [90, 25, 67, 45, 80]
+number = 0
+for mark in marks:
+    number = number + 1
+    if mark < 60:
+        continue
+    print("%d번 학생 축하합니다. 합격입니다." %number)
+
+sum = 0
+for i in range(1, 11):
+    sum = sum + i
+
+print(sum)
+
+for i in range(2, 10):
+    for j in range (1,10):
+        print(i*j, end=" ")
+    print(' ')
+
+for i in range (1, 51):
+    print (i)
+
+for i in range (1, 11):
+    if i % 3 == 0:
+        pass
+    else:
